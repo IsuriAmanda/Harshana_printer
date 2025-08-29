@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harshana Printers - Quotations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Harshana Printers</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Generate</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <nav>
+      <a href="#">Quotations</a>
+      <a href="#">Job</a>
+      <a href="#">Supplies</a>
+    </nav>
+
+    <section class="table-container">
+      <h2>Quotations</h2>
+      <button id="addRow">➕ Add New</button>
+      <table id="quotationTable">
+        <thead>
+          <tr>
+            <th>QN</th>
+            <th>Job Name</th>
+            <th>Customer</th>
+            <th>Status</th>
+            <th>Actions</th>
+            <th>Export for a Job</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>QN0001</td>
+            <td>XYZNM</td>
+            <td>N.M.Perera</td>
+            <td>Confirmed</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+            <td><button class="export">Export for a Job</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

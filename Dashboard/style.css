@@ -1,0 +1,96 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #f5f5f5;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #cdd8ce;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  font-weight: bold;
+}
+
+/* Main area */
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #444;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+#addRow {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: #4CAF50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+button.edit {
+  background: #bbb;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.delete {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.export {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
