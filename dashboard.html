@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Harshana Printers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Harshana Printers</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Generate</li>
+    </ul>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <div class="main">
+    <nav>
+      <a href="#">Quotations</a>
+      <a href="#">Job</a>
+      <a href="#">Supplies</a>
+    </nav>
+
+    <h2>Welcome to Dashboard</h2>
+    <p id="userInfo"></p>
+  </div>
+
+  <script>
+    // Show logged-in user
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (!currentUser) {
+      window.location.href = "login.html";
+    } else {
+      document.getElementById("userInfo").innerText = 
+        `Logged in as ${currentUser.email} (${currentUser.userType})`;
+    }
+
+    // Logout
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("currentUser");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

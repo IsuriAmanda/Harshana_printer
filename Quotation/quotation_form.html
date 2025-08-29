@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation Details</title>
+  <link rel="stylesheet" href="quotation_form.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="brand">Harshana Printers</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li class="active"><a href="quotation.html">Generate</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+      <nav>
+        <a href="#">Quotations</a>
+        <a href="#">Job</a>
+        <a href="#">Supplies</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>Quotation Details</h2>
+      <form id="quotationForm" class="quotation-form">
+        
+        <div class="form-row">
+          <label>Quotation No:</label>
+          <span>Q-0001</span>
+        </div>
+        <div class="form-row">
+          <label>Job Name:</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label>Job Type:</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label>Job Qty:</label>
+          <input type="number">
+        </div>
+        <div class="form-row">
+          <label>Job Size:</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label>Margin Size:</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label>Pages Qty:</label>
+          <input type="number">
+        </div>
+        <div class="form-row">
+          <label>Materials supplied by HPI:</label>
+          <label><input type="radio" name="materials" value="yes"> Yes</label>
+          <label><input type="radio" name="materials" value="no"> No</label>
+        </div>
+        <div class="form-row">
+          <label>Lamination:</label>
+          <label><input type="radio" name="lamination" value="none"> None</label>
+          <label><input type="radio" name="lamination" value="gloss"> Gloss</label>
+          <label><input type="radio" name="lamination" value="matt"> Matt</label>
+        </div>
+        <div class="form-row">
+          <label>Binding:</label>
+          <label><input type="radio" name="binding" value="none"> None</label>
+          <label><input type="radio" name="binding" value="perfect"> Perfect</label>
+          <label><input type="radio" name="binding" value="center"> Center</label>
+        </div>
+        <div class="form-row">
+          <label>Extra Charges:</label>
+          <input type="number" value="5"> %
+        </div>
+        <div class="form-row">
+          <label>Profit Margin:</label>
+          <input type="number" value="10"> %
+        </div>
+        <div class="form-row">
+          <label>Sample Design:</label>
+          <input type="file">
+        </div>
+
+        <!-- Buttons -->
+        <div id="buttonContainer">
+          <button type="button" id="viewBtn" class="primary-btn">VIEW</button>
+        </div>
+      </form>
+
+      <!-- Cutting View -->
+      <div id="cuttingView" class="cutting-view hidden">
+        <h3>Cutting View</h3>
+        <div class="cutting-box">Preview will appear here</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="quotation_form.js"></script>
+</body>
+</html>

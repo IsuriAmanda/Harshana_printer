@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Harshana Printers - Quotations</title>
+  <title>Harshana Printers - Jobs</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,8 +10,8 @@
   <div class="sidebar">
     <h2 class="brand">Harshana Printers</h2>
     <ul>
-      <li class="active"><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="quotation.html">Generate</a></li>
+      <li class="active"><a href="jobs.html">Jobs</a></li>
+      
     </ul>
   </div>
 
@@ -20,36 +20,44 @@
     <header class="top-navbar">
       <nav>
         <a href="#">Quotations</a>
-        <a href="#">Job</a>
+        <a href="#">Jobs</a>
         <a href="#">Supplies</a>
       </nav>
     </header>
 
     <section class="table-container">
-      <h2>Quotations</h2>
+      <h2>Jobs</h2>
       
-      <table id="quotationTable">
+      <table id="jobsTable">
         <thead>
           <tr>
-            <th>QN</th>
+            <th>Job ID</th>
             <th>Job Name</th>
             <th>Customer</th>
             <th>Status</th>
             <th>Actions</th>
-            <th>Export for a Job</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>QN0001</td>
-            <td>XYZNM</td>
+            <td>JOB0001</td>
+            <td>Business Cards</td>
             <td>N.M. Perera</td>
-            <td>Confirmed</td>
+            <td>In Progress</td>
             <td>
               <button class="edit">Edit</button>
               <button class="delete">Delete</button>
             </td>
-            <td><button class="export">Export</button></td>
+          </tr>
+          <tr>
+            <td>JOB0002</td>
+            <td>Flyers</td>
+            <td>K.D. Silva</td>
+            <td>Completed</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
           </tr>
         </tbody>
       </table>

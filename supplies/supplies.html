@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplies - Binding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">Harshana Printers</h2>
+    <nav class="main-nav">
+      <a href="#">Quotations</a>
+      <a href="#">Job</a>
+      <a href="#" class="active">Supplies</a>
+    </nav>
+    <div class="sub-menu">
+      <a href="#" class="active">Binding</a>
+      <a href="#">Laminating</a>
+      <a href="#">Printing</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h2 class="title">Supplies - Binding</h2>
+
+    <!-- Table: Binding Supply List -->
+    <table class="styled-table" id="simpleTable">
+      <thead>
+        <tr>
+          <th>Supply ID</th>
+          <th>Supply Name</th>
+          <th>Cost/Tier wise</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B01</td>
+          <td>Perfect</td>
+          <td>Fixed</td>
+          <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>B02</td>
+          <td>Center</td>
+          <td>Fixed</td>
+          <td><button class="delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Extended View -->
+    <div id="extendedView" class="hidden">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Supply ID</th>
+            <th>Supply Name</th>
+            <th>Details</th>
+            <th>Status</th>
+            <th>Action</th>
+            <th>Export for Job</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B01</td>
+            <td>Perfect</td>
+            <td>Fixed</td>
+            <td><span class="badge confirmed">Confirmed</span></td>
+            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="export-btn">Export</button></td>
+          </tr>
+          <tr>
+            <td>B02</td>
+            <td>Center</td>
+            <td>Fixed</td>
+            <td><span class="badge rejected">Rejected</span></td>
+            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="export-btn">Export</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Prices Table -->
+      <h3 class="title">Prices</h3>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Qtn</th>
+            <th>Job Name</th>
+            <th>Customer</th>
+            <th>Status</th>
+            <th>Action</th>
+            <th>Export for Job</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>QX001</td>
+            <td>XYZ Job</td>
+            <td>Nal/Perera</td>
+            <td><span class="badge sent">Sent</span></td>
+            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="export-btn">Export</button></td>
+          </tr>
+          <tr>
+            <td>QX002</td>
+            <td>XYZ Job</td>
+            <td>Nal/Perera</td>
+            <td><span class="badge rejected">Rejected</span></td>
+            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="export-btn">Export</button></td>
+          </tr>
+          <tr>
+            <td>QX003</td>
+            <td>XYZ Job</td>
+            <td>Nal/Perera</td>
+            <td><span class="badge confirmed">Confirmed</span></td>
+            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="export-btn">Export</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Toggle Button -->
+    <div class="footer-actions">
+      <button id="toggleViewBtn" class="primary-btn">Back ↩</button>
+    </div>
+  </main>
+
+  <script src="supplies.js"></script>
+</body>
+</html>

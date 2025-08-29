@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Harshana Printers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h1>Create Account</h1>
+    <p>Register to access Harshana Printers system</p>
+
+    <select id="signupUserType">
+      <option value="">Select user type</option>
+      <option value="admin">Admin</option>
+      <option value="staff">Staff</option>
+      <option value="customer">Customer</option>
+    </select>
+
+    <input type="email" id="signupEmail" placeholder="Your email address">
+    <input type="password" id="signupPassword" placeholder="Choose a password">
+
+    <button id="signupBtn">Sign Up</button>
+    <p><a href="login.html">Already have an account? Log In</a></p>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

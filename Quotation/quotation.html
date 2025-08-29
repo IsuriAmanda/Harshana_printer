@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quotation - Harshana Printers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="brand">Harshana Printers</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li class="active"><a href="quotation.html">Generate</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <header class="top-navbar">
+      <nav>
+        <a href="#">Quotations</a>
+        <a href="#">Job</a>
+        <a href="#">Supplies</a>
+      </nav>
+    </header>
+
+    <section class="form-box">
+      <h2>Quotation - Primary Details</h2>
+      <h3>Customer Details</h3>
+
+      <form id="quotationForm">
+        <div class="form-group">
+          <label>Customer Name:</label>
+          <input type="text" id="custName" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" id="custEmail" required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number:</label>
+          <input type="text" id="custPhone" required>
+        </div>
+
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </form>
+    </section>
+  </div>
+  <script>
+  const form = document.getElementById('customerForm');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent normal form submit
+
+    // Get values
+    const phone = document.getElementById('custPhone').value;
+
+    // Save to localStorage
+    localStorage.setItem('custPhone', phone);
+
+    // Redirect to quotation form page
+    window.location.href = 'quotation_form.html';
+  });
+</script>
+
+  <script src="quotation.js"></script>
+</body>
+</html>
